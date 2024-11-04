@@ -52,7 +52,7 @@ while True:
 			jugador2 = input("\nEs el turno del jugador 2, escoge: piedra, papel o tijera: ").lower()
 
 
-		if jugador1 not in lista_de_opciones and jugador2 not in lista_de_opciones:
+		if jugador1 not in lista_de_opciones or jugador2 not in lista_de_opciones:
 			raise ValueError("Ups! Solo puedes ingresar las opciones mencionadas")
 
 
